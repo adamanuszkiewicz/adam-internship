@@ -17,6 +17,7 @@
 @import url("../fonts/et-line-font/style.css");
 @import url("../fonts/icofont/icofont.min.css");
 
+
 * {
   --body-font: "DM Sans", Helvetica, Arial, sans-serif;
   --title-font: "DM Sans", Helvetica, Arial, sans-serif;
@@ -8190,6 +8191,112 @@ a.btn-border,
   outline: none;
 }
 
+/* ================================================== */
+
+/* Slick-Slider */
+
+
+.nft_wrap img.lazy.img-fluid {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+ .slick-slide  > div {
+  margin-left: 3px;
+  margin-right: 3px;
+  overflow: hidden;
+} 
+
+button {
+  z-index: 3;
+}
+
+.slick-arrow.slick-prev::before,
+.slick-arrow.slick-next::before {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  border-radius: 50%;
+  font-size: 40px;
+  opacity: 1;
+  transform: translateX(10px);
+  background-color: white;
+}
+
+.slick-arrow.slick-prev {
+  top: 58%;
+  transform: translateX(50%);
+  z-index: 2;
+}
+
+.slick-arrow.slick-next {
+  top: 58%;
+  transform: translateX(-150%);
+  z-index: 2;
+} 
+
+/* ================================================== */
+
+/*Skeleton Loading*/
+
+.skeleton-card {
+  width: 100%;
+  max-width: 260px;
+  min-height: 320px;
+  background: #eee;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  animation: pulse 1.5s infinite;
+}
+
+.skeleton-img {
+  width: 100%;
+  height: 160px;
+  background-color: #ddd;
+  border-radius: 8px;
+  margin-bottom: 16px;
+}
+
+.skeleton-avatar {
+  width: 60px;
+  height: 60px;
+  background-color: #ddd;
+  border-radius: 50%;
+  margin: -30px 0 10px 0;
+}
+
+.skeleton-title,
+.skeleton-subtitle {
+  height: 18px;
+  width: 70px;
+  background: #ddd;
+  border-radius: 4px;
+  margin: 8px 0;
+}
+
+.skeleton-subtitle {
+  width: 40%;
+  margin-bottom: 0;
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% {opacity: 0.5;}
+  100% { opacity: 1;}
+}
+
+
+
+
+
+/* ================================================== */
+
 a.btn-fx:after,
 a.btn-fx:hover:after,
 a.btn-fx:before,
@@ -15098,6 +15205,8 @@ a.btn-slider:hover {
 }
 
 /* flex slider - testi slider */
+
+
 
 #testimonial-full {
   text-align: center;

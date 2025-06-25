@@ -8193,8 +8193,7 @@ a.btn-border,
 
 /* ================================================== */
 
-/* Slick-Slider */
-
+/* Hot Collections */
 
 .nft_wrap img.lazy.img-fluid {
   width: 100%;
@@ -8203,15 +8202,13 @@ a.btn-border,
   overflow: hidden;
 }
 
- .slick-slide  > div {
+.slick-slide  > div {
   margin-left: 3px;
   margin-right: 3px;
   overflow: hidden;
 } 
 
-button {
-  z-index: 3;
-}
+/* Arrow Buttons */
 
 .slick-arrow.slick-prev::before,
 .slick-arrow.slick-next::before {
@@ -8224,30 +8221,36 @@ button {
   opacity: 1;
   transform: translateX(10px);
   background-color: white;
+  margin-bottom: 0;
 }
 
 .slick-arrow.slick-prev {
-  top: 58%;
-  transform: translateX(50%);
+  position: absolute;
+  top: 61%;
+  left: -16px;
   z-index: 2;
+  margin-bottom: 0;
 }
 
 .slick-arrow.slick-next {
-  top: 58%;
-  transform: translateX(-150%);
+  position: absolute;
+  top: 61%;
+  right: 4px;
   z-index: 2;
+  margin-bottom: 0;
 } 
 
 /* ================================================== */
 
-/*Skeleton Loading*/
+/*Skeleton Loading - Hot Collections*/
 
 .skeleton-card {
   width: 100%;
-  max-width: 260px;
+  max-width: 360px;
   min-height: 320px;
-  background: #eee;
+  background: linear-gradient(120deg, #e7e6ea 0%, #f3f3f3 100%);
   border-radius: 10px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -8255,6 +8258,23 @@ button {
   animation: pulse 1.5s infinite;
 }
 
+.skeleton-check {
+  position: relative;
+  bottom: 22px;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color:#a68cff ;
+  font-size: 12px;
+  z-index: 3;
+}
 .skeleton-img {
   width: 100%;
   height: 160px;
@@ -8266,7 +8286,7 @@ button {
 .skeleton-avatar {
   width: 60px;
   height: 60px;
-  background-color: #ddd;
+  background-color: #ececec;
   border-radius: 50%;
   margin: -30px 0 10px 0;
 }
@@ -8291,9 +8311,182 @@ button {
   100% { opacity: 1;}
 }
 
+/* ================================================== */
 
+/* New Items */
 
+.author_list_pp {
+  position: relative;
+  margin-bottom: 20px;
+}
 
+.nft__item_info {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: auto;
+  word-break: break-word;
+}
+
+.nft__item {
+  min-height: 450px;
+  max-height: none;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  margin-bottom: 25px;
+  padding: 20px;
+  position: absolute;
+}
+
+.nft__item_wrap {
+  align-items: center;
+  display: flex;
+  height: 450px;
+  justify-content: center;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.nft__item_info {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.nft__item_info-text {
+  height: 25px;
+}
+
+.nft__item_price {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.nft__item_like {
+  bottom: 22px;
+  color: rgb(221, 221, 221);
+  font-size: 14px;
+  position: relative;
+  width: 40px;
+  display: flex;
+}
+
+.de_countdown {
+  background: #fff;
+  border: 2px solid #ddd;
+  border-radius: 30px;
+  -moz-border-radius: 30px;
+  -webkit-border-radius: 30px;
+  color: #0d0c22;
+  padding: 1px 10px;
+  position: absolute;
+  right: 20px;
+  z-index: 100;
+}
+
+/* ================================================== */
+/* Skeleton Loading - New Items */
+
+.skeleton-nft-card {
+  width: 100%;
+  max-width: 360px;
+  min-height: 420px;
+  background: linear-gradient(120deg, #e7e6ea 0%, #f3f3f3 100%);
+  border-radius: 10px;
+  margin: 0 auto;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  overflow: hidden;
+  border: 1px solid #e5e4ea;
+  animation: pulse 1.5s infinite;
+}
+
+.skeleton-nft-card-img-area {
+  width: 100%;
+  position: relative;
+  padding-top: 0;
+}
+
+.skeleton-nft-card-avatar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60px;
+  height: 60px;
+  background: #ececec;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.skeleton-nft-card-check {
+  position: absolute;
+  top: 50px;
+  left: 42px;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  border-radius: 50%;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #a68cff;
+  font-size: 12px;
+  z-index: 3;
+}
+
+.skeleton-nft-card-img {
+  width: 100%;
+  height: 240px;
+  background: #ddd;
+  margin-bottom: 24px;
+  margin-top: 0;
+}
+
+.skeleton-nft-card-row {
+  height: 20px;
+  background: #ececec;
+  border-radius: 6px;
+  margin: 12px 0 0 24px;
+  animation: pulse 1.5s infinite;
+}
+
+.skeleton-nft-card-row-lg {
+  width: 70%;
+  background-color: #dddbdd;
+}
+
+.skeleton-nft-card-footer {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin-top: 18px;
+  padding: 0 24px;
+  gap: 8px;
+}
+
+.skeleton-nft-card-row-md {
+  width: 40%;
+  height: 16px;
+  margin: 0;
+  background-color: #dddbdd;
+}
+
+.skeleton-nft-card-row-xs {
+  width: 16%;
+  height: 16px;
+  margin-left: auto;
+  margin-right: 0;
+  background-color: #dddbdd;
+}
 
 /* ================================================== */
 
@@ -15254,7 +15447,7 @@ a.btn-slider:hover {
   margin: 0 6px;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  display: inline;
 }
 
 .testi-slider .flex-control-paging li a {

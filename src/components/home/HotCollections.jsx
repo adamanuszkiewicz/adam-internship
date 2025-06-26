@@ -53,9 +53,7 @@ const HotCollections = () => {
             <Slider {...settings}>
               {hotCollections.length > 0
                 ? hotCollections.map((collection, index) => (
-                    <div 
-                      className="
-                      col-xs-12"
+                    <div className="col-xs-12"
                       key={index}
                     >
                       <div className="nft_coll">
@@ -97,6 +95,9 @@ const HotCollections = () => {
                       <div className="skeleton-card">
                         <div className="skeleton-img"></div>
                         <div className="skeleton-avatar"></div>
+                        <div className="skeleton-check">
+                          <i className="fa fa-check"></i>
+                        </div>
                         <div className="skeleton-title"></div>
                         <div className="skeleton-subtitle"></div>
                       </div>

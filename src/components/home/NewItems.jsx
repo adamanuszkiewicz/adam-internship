@@ -11,7 +11,7 @@ import Countdown from "../CountDown";
 const NewItems = () => {
   const [hotCollections, setHotCollections] = useState([]);
 
-  const getExploreData = async () => {
+  const getNewItems = async () => {
     try {
       const response = await axios.get(
         `https://us-central1-nft-cloud-functions.cloudfunctions.net/newItems`
@@ -24,7 +24,7 @@ const NewItems = () => {
   };
 
   useEffect(() => {
-    getExploreData();
+    getNewItems();
   }, []);
 
   const settings = {

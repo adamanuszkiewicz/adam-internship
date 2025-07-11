@@ -8374,6 +8374,8 @@ a.btn-border,
   position: relative;
   width: 40px;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .de_countdown {
@@ -8571,6 +8573,143 @@ a.btn-border,
 
 
 /* ================================================== */
+/* Skeleton Loading - Author */
+
+.skeleton-nft-card-avatar {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+  background-color: #e2e2e2;
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.skeleton-nft-card-check {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #e2e2e2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 15px;
+  margin-left: 35px;
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.profile_follow.de-flex {
+  display: flex;
+  /* justify-content: center; */
+  text-align: left;
+}
+
+.skeleton-de-flex-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.skeleton-nft-card-row {
+  height: 16px;
+  background: #e2e2e2;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  animation: skeleton-loading 1s linear infinite alternate;
+}
+
+.skeleton-nft-card-row.skeleton-nft-card-row-md {
+  width: 150px;
+  margin-left: 24px;
+}
+
+.skeleton-nft-card-row.skeleton-nft-card-row-sm {
+  margin-left: 4px;
+  margin-bottom: 20px;
+  width: 80px;
+  margin-left: 24px;
+}
+
+.profile_follow.de-flex-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skeleton-de-flex-col-2 {
+  display: flex;
+  margin-left: 16px;
+  
+}
+
+/* .d_profile.d-flex {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  gap: 40px;
+  min-height: 180px;
+  margin-bottom: 30px;
+} */
+
+.skeleton-nft-card-row.skeleton-nft-card-row-sm-2 {
+  width: 70px;
+  margin-left: 4px;
+  margin-bottom: 20p2;
+}
+
+.skeleton-nft-card-row-md-2 {
+  width: 40px;
+}
+
+.skeleton-nft-card-row-md-3 {
+  top: 100px;
+  width: 120px;
+  height: 44px;
+  margin-left: 24px;
+}
+
+.skeleton-nft-card-row-xs {
+  width: 40px;
+}
+
+.skeleton-followers-info {
+  height: 100px;
+  background-color: #e2e2e2;
+  width: 120px;
+}
+
+@media (max-width: 766px) {
+
+
+  .skeleton-de-flex-col-2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 0;
+    margin-bottom: -14px;
+  }
+
+  .profile_follow.de-flex-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: start;
+    margin-top: 0;
+  }
+}
+
+@keyframes pulse {
+  0% { opacity: 1; }
+  50% { opacity: 0.7; }
+  100% { opacity: 1; }
+}
+
+
+
+/* ================================================== */
+
 
 a.btn-fx:after,
 a.btn-fx:hover:after,

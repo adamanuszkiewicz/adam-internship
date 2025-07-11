@@ -12,7 +12,7 @@ const TopSellers = () => {
         `https://us-central1-nft-cloud-functions.cloudfunctions.net/topSellers`
       );
       setTopSellers(response.data);
-      console.log(response.data);
+      // console.log(response.data);
     } catch (error) {
       console.error("Error fetching New Items", error);
     }

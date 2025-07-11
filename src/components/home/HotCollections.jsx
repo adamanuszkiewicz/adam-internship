@@ -16,7 +16,6 @@ const HotCollections = () => {
         `https://us-central1-nft-cloud-functions.cloudfunctions.net/hotCollections`
       );
       setHotCollections(response.data);
-      console.log(response.data);
     } catch (error) {
       console.error("Error fetching Hot Collections", error);
     }
@@ -82,7 +81,7 @@ const HotCollections = () => {
                           >
                             <h4>{collection.title || "No Title"}</h4>
                           </Link>
-                          <span>{collection.code || "No Code"}</span>
+                          <span>ERC-{collection.code || "No Code"}</span>
                         </div>
                       </div>
                     </div>

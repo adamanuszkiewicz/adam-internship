@@ -17,6 +17,9 @@ const NewItems = () => {
         `https://us-central1-nft-cloud-functions.cloudfunctions.net/newItems`
       );
       setNewItems(response.data);
+
+      console.log(response.data);
+
     } catch (error) {
       console.error("Error fetching New Items", error);
     }
@@ -53,7 +56,9 @@ const NewItems = () => {
             <Slider {...settings}>
               {newItems.length > 0
                 ? newItems.map((item, index) => (
-                    <div className="col-xs-12" 
+
+                    <div className="col-xs-12"  
+
                       key={index}>
                       <div className="nft__item">
                         <div className="author_list_pp">
@@ -99,19 +104,19 @@ const NewItems = () => {
                 : new Array(4).fill(0).map((_, index) => (
                     <div key={index}>
                       <div className="skeleton-nft-card">
-                        <div className="skeleton-nft-card-img-area">
-                          <div className="skeleton-nft-card-avatar"></div>
-                          <div className="skeleton-nft-card-check">
-                            <i className="fa fa-check"></i>
-                          </div>
-                          <div className="skeleton-nft-card-img"></div>
-                        </div>
-                        <div className="skeleton-nft-card-row skeleton-nft-card-row-lg"></div>
-                        <div className="skeleton-nft-card-footer">
-                          <div className="skeleton-nft-card-row skeleton-nft-card-row-md"></div>
-                          <div className="skeleton-nft-card-row skeleton-nft-card-row-xs"></div>
-                        </div>
-                      </div>
+                  <div className="skeleton-nft-card-img-area">
+                    <div className="skeleton-nft-card-avatar"></div>
+                    <div className="skeleton-nft-card-check">
+                      <i className="fa fa-check"></i>
+                    </div>
+                    <div className="skeleton-nft-card-img"></div>
+                  </div>
+                  <div className="skeleton-nft-card-row skeleton-nft-card-row-lg"></div>
+                  <div className="skeleton-nft-card-footer">
+                    <div className="skeleton-nft-card-row skeleton-nft-card-row-md"></div>
+                    <div className="skeleton-nft-card-row skeleton-nft-card-row-xs"></div>
+                  </div>
+                </div>
                     </div>
                   ))}
             </Slider>

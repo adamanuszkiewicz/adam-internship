@@ -54,7 +54,7 @@ const NewItems = () => {
             <Slider {...settings}>
               {newItems.length > 0
                 ? newItems.map((item, index) => (
-                    <div className="col-xs-12" 
+                    <div className="col-xs-12"  
                       key={index}>
                       <div className="nft__item">
                         <div className="author_list_pp">

@@ -8215,9 +8215,10 @@ a.btn-border,
   display: flex;
   justify-content: center;
   align-items: center;
-  color: black;
+  color: #8364e2;
   border-radius: 50%;
   font-size: 40px;
+  height: 28.5px;
   opacity: 1;
   transform: translateX(10px);
   background-color: white;
@@ -8226,6 +8227,7 @@ a.btn-border,
 
 .slick-arrow.slick-prev {
   position: absolute;
+  height: 60px;
   top: 61%;
   left: -16px;
   z-index: 2;
@@ -8234,6 +8236,7 @@ a.btn-border,
 
 .slick-arrow.slick-next {
   position: absolute;
+  height: 60px;
   top: 61%;
   right: 4px;
   z-index: 2;

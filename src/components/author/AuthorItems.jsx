@@ -5,10 +5,8 @@ import nftImage from "../../images/nftImage.jpg";
 import axios from "axios";
 
 const AuthorItems = ({ authorImage, authorId, authorName }) => {
-  // const { authorId } = useParams();
   const [items, setItems] = useState([]);
   const [loading, setLoading] = useState(true);
-  // const [authorData, setAuthorData] = useState({})
 
   useEffect(() => {
     const fetchItems = async () => {

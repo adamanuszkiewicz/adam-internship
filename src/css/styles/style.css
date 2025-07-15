@@ -8493,10 +8493,6 @@ a.btn-border,
   background-color: #dddbdd;
 }
 
-/* ================================================== */
-/* Top Sellers */
-
-
 
 /* ================================================== */
 
@@ -8650,15 +8646,6 @@ a.btn-border,
   margin-left: 16px;
   
 }
-
-/* .d_profile.d-flex {
-  width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  gap: 40px;
-  min-height: 180px;
-  margin-bottom: 30px;
-} */
 
 .skeleton-nft-card-row.skeleton-nft-card-row-sm-2 {
   width: 70px;

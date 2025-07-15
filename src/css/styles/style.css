@@ -8372,7 +8372,7 @@ a.btn-border,
   color: rgb(221, 221, 221);
   font-size: 14px;
   position: relative;
-  width: 40px;
+  width: auto;
   display: flex;
   justify-content: center;
   align-items: center;

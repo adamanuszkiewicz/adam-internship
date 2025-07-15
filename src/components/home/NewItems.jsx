@@ -17,7 +17,9 @@ const NewItems = () => {
         `https://us-central1-nft-cloud-functions.cloudfunctions.net/newItems`
       );
       setNewItems(response.data);
+
       console.log(response.data);
+
     } catch (error) {
       console.error("Error fetching New Items", error);
     }
@@ -54,7 +56,9 @@ const NewItems = () => {
             <Slider {...settings}>
               {newItems.length > 0
                 ? newItems.map((item, index) => (
+
                     <div className="col-xs-12"  
+
                       key={index}>
                       <div className="nft__item">
                         <div className="author_list_pp">
@@ -86,7 +90,7 @@ const NewItems = () => {
                           </Link>
                           <div className="nft__item_info-text">
                             <div className="nft__item_price">
-                              {item.price || "No Price"}
+                              {item.price || "No Price"} ETH
                             </div>
                             <div className="nft__item_like">
                               <i className="fa fa-heart"></i>

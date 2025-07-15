@@ -8374,6 +8374,7 @@ a.btn-border,
 .nft__item_like {
   bottom: 22px;
   color: rgb(221, 221, 221);
+  width: auto;
   font-size: 14px;
   position: relative;
   width: auto;
@@ -8492,7 +8493,6 @@ a.btn-border,
   margin-right: 0;
   background-color: #dddbdd;
 }
-
 
 /* ================================================== */
 

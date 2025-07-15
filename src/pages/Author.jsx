@@ -73,16 +73,15 @@ const Author = () => {
                             <div className="skeleton-nft-card-row skeleton-nft-card-row-md"></div>
                           </div>
                         </div>
-                        
                       </div>
                     </div>
                     <div className="profile_follow de-flex-2">
-                          <div className="skeleton-de-flex-col-2">
-                            <div className="skeleton-nft-card-row skeleton-nft-card-row-md-2"></div>
-                            <div className="skeleton-nft-card-row skeleton-nft-card-row-sm-2"></div>
-                          </div>
-                            <div className="skeleton-nft-card-row skeleton-nft-card-row-md-3"></div>
-                        </div>
+                      <div className="skeleton-de-flex-col-2">
+                        <div className="skeleton-nft-card-row skeleton-nft-card-row-md-2"></div>
+                        <div className="skeleton-nft-card-row skeleton-nft-card-row-sm-2"></div>
+                      </div>
+                      <div className="skeleton-nft-card-row skeleton-nft-card-row-md-3"></div>
+                    </div>
                   </div>
                 ) : (
                   <div className="d_profile de-flex">

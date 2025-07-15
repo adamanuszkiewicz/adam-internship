@@ -9,14 +9,14 @@ import "slick-carousel/slick/slick-theme.css";
 import Countdown from "../CountDown";
 
 const NewItems = () => {
-  const [hotCollections, setHotCollections] = useState([]);
+  const [newItems, setNewItems] = useState([]);
 
   const getExploreData = async () => {
     try {
       const response = await axios.get(
         `https://us-central1-nft-cloud-functions.cloudfunctions.net/newItems`
       );
-      setHotCollections(response.data);
+      setNewItems(response.data);
     } catch (error) {
       console.error("Error fetching New Items", error);
     }
@@ -51,7 +51,7 @@ const NewItems = () => {
           </div>
           <div className="col-12">
             <Slider {...settings}>
-              {hotCollections.length > 0
+              {newItems.length > 0
                 ? hotCollections.map((item, index) => (
                     <div className="col-xs-12" 
                       key={index}>

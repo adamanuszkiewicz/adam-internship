@@ -142,16 +142,18 @@ const ExploreItems = () => {
           </div>
         )
       )}
-      <div className="col-md-12 text-center">
-        <Link
-          to=""
-          id="loadmore"
-          className="btn-main lead"
-          onClick={handleLoadMore}
-        >
-          Load more
-        </Link>
-      </div>
+      {visibleCount < exploreItems.length && (
+        <div className="col-md-12 text-center">
+          <Link
+            to=""
+            id="loadmore"
+            className="btn-main lead"
+            onClick={handleLoadMore}
+          >
+            Load more
+          </Link>
+        </div>
+      )}
     </>
   );
 };

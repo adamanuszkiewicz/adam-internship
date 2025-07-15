@@ -52,7 +52,7 @@ const NewItems = () => {
           <div className="col-12">
             <Slider {...settings}>
               {newItems.length > 0
-                ? hotCollections.map((item, index) => (
+                ? newItems.map((item, index) => (
                     <div className="col-xs-12" 
                       key={index}>
                       <div className="nft__item">

@@ -12,7 +12,6 @@ const TopSellers = () => {
         `https://us-central1-nft-cloud-functions.cloudfunctions.net/topSellers`
       );
       setTopSellers(response.data);
-      // console.log(response.data);
     } catch (error) {
       console.error("Error fetching New Items", error);
     }
@@ -23,8 +22,8 @@ const TopSellers = () => {
   }, []);
 
   return (
-    <section id="section-popular" className="pb-5">
-      <div className="container">
+    <section data-aos="fade-in" id="section-popular" className="pb-5">
+      <div data-aos="fade-in" className="container">
         <div className="row">
           <div className="col-lg-12">
             <div className="text-center">
